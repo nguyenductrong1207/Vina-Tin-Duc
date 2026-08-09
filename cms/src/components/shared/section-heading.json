@@ -1,0 +1,21 @@
+{
+  "collectionName": "components_shared_section_headings",
+  "info": {
+    "displayName": "Section Heading",
+    "icon": "heading",
+    "description": "Reusable section heading with title and subtitle"
+  },
+  "attributes": {
+    "title": {
+      "type": "string",
+      "required": true
+    },
+    "subtitle": {
+      "type": "text"
+    },
+    "centered": {
+      "type": "boolean",
+      "default": true
+    }
+  }
+}

@@ -1,0 +1,21 @@
+{
+  "collectionName": "components_shared_statistic_items",
+  "info": {
+    "displayName": "Statistic Item",
+    "icon": "chartBubble",
+    "description": "A single statistic with number and label"
+  },
+  "attributes": {
+    "value": {
+      "type": "string",
+      "required": true
+    },
+    "label": {
+      "type": "string",
+      "required": true
+    },
+    "suffix": {
+      "type": "string"
+    }
+  }
+}

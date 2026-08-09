@@ -1,0 +1,22 @@
+{
+  "collectionName": "components_sections_capability_items",
+  "info": {
+    "displayName": "Capability Item",
+    "icon": "check",
+    "description": "A single capability/feature item"
+  },
+  "attributes": {
+    "title": {
+      "type": "string",
+      "required": true
+    },
+    "description": {
+      "type": "text"
+    },
+    "icon": {
+      "type": "media",
+      "multiple": false,
+      "allowedTypes": ["images"]
+    }
+  }
+}

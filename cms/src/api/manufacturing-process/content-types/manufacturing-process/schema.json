@@ -1,0 +1,40 @@
+{
+  "kind": "collectionType",
+  "collectionName": "manufacturing_processes",
+  "info": {
+    "singularName": "manufacturing-process",
+    "pluralName": "manufacturing-processes",
+    "displayName": "Manufacturing Process",
+    "description": "Manufacturing process steps"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "title": {
+      "type": "string",
+      "required": true
+    },
+    "description": {
+      "type": "text"
+    },
+    "content": {
+      "type": "richtext"
+    },
+    "order": {
+      "type": "integer",
+      "required": true,
+      "default": 0
+    },
+    "image": {
+      "type": "media",
+      "multiple": false,
+      "allowedTypes": ["images"]
+    },
+    "icon": {
+      "type": "media",
+      "multiple": false,
+      "allowedTypes": ["images"]
+    }
+  }
+}

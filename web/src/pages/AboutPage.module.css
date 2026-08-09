@@ -1,0 +1,145 @@
+.pageHeader {
+  padding-top: var(--space-16);
+  padding-bottom: var(--space-12);
+  background-color: var(--color-bg-alt);
+  border-bottom: 1px solid var(--color-border);
+}
+
+.badge {
+  display: inline-block;
+  font-size: var(--font-size-xs);
+  font-weight: var(--font-weight-semibold);
+  text-transform: uppercase;
+  letter-spacing: var(--letter-spacing-widest);
+  color: var(--color-primary-600);
+  background-color: var(--color-primary-50);
+  padding: var(--space-2) var(--space-4);
+  border-radius: var(--radius-full);
+  margin-bottom: var(--space-4);
+}
+
+.pageTitle {
+  font-size: var(--font-size-5xl);
+  font-weight: var(--font-weight-bold);
+  letter-spacing: var(--letter-spacing-tight);
+  margin-bottom: var(--space-4);
+}
+
+.pageDescription {
+  font-size: var(--font-size-lg);
+  color: var(--color-text-secondary);
+  max-width: 44rem;
+  line-height: var(--line-height-relaxed);
+}
+
+/* Content */
+.richContent {
+  line-height: var(--line-height-relaxed);
+  max-width: 65ch;
+  color: var(--color-text-secondary);
+}
+
+.richContent h2 {
+  font-size: var(--font-size-2xl);
+  color: var(--color-text);
+  margin-top: var(--space-10);
+  margin-bottom: var(--space-4);
+}
+
+.richContent h3 {
+  font-size: var(--font-size-xl);
+  color: var(--color-text);
+  margin-top: var(--space-8);
+  margin-bottom: var(--space-3);
+}
+
+.richContent p { margin-bottom: var(--space-4); }
+.richContent ul, .richContent ol { margin-bottom: var(--space-4); padding-left: var(--space-6); }
+.richContent li { margin-bottom: var(--space-2); list-style: disc; }
+.richContent strong { color: var(--color-text); font-weight: var(--font-weight-semibold); }
+
+/* Mission/Vision cards */
+.valuesGrid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: var(--space-6);
+  margin-top: var(--space-12);
+}
+
+@media (min-width: 768px) {
+  .valuesGrid { grid-template-columns: repeat(2, 1fr); }
+}
+
+.valueCard {
+  padding: var(--space-8);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-xl);
+  background-color: var(--color-neutral-0);
+}
+
+.valueLabel {
+  font-size: var(--font-size-xs);
+  font-weight: var(--font-weight-semibold);
+  text-transform: uppercase;
+  letter-spacing: var(--letter-spacing-wider);
+  color: var(--color-primary-600);
+  margin-bottom: var(--space-3);
+}
+
+.valueText {
+  font-size: var(--font-size-base);
+  color: var(--color-text-secondary);
+  line-height: var(--line-height-relaxed);
+}
+
+/* Milestones */
+.milestonesSection {
+  padding-top: var(--space-16);
+  border-top: 1px solid var(--color-border);
+  margin-top: var(--space-16);
+}
+
+.milestonesTitle {
+  font-size: var(--font-size-2xl);
+  font-weight: var(--font-weight-bold);
+  margin-bottom: var(--space-8);
+}
+
+.milestonesList {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-6);
+}
+
+.milestone {
+  display: flex;
+  gap: var(--space-5);
+  align-items: flex-start;
+}
+
+.milestoneYear {
+  flex-shrink: 0;
+  font-size: var(--font-size-sm);
+  font-weight: var(--font-weight-bold);
+  font-family: var(--font-family-mono);
+  color: var(--color-primary-600);
+  background-color: var(--color-primary-50);
+  padding: var(--space-2) var(--space-3);
+  border-radius: var(--radius-md);
+  min-width: 4rem;
+  text-align: center;
+}
+
+.milestoneContent { flex: 1; }
+
+.milestoneTitle {
+  font-size: var(--font-size-base);
+  font-weight: var(--font-weight-semibold);
+  color: var(--color-text);
+  margin-bottom: var(--space-1);
+}
+
+.milestoneDescription {
+  font-size: var(--font-size-sm);
+  color: var(--color-text-secondary);
+}

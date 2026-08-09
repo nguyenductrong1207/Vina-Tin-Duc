@@ -1,0 +1,20 @@
+{
+  "collectionName": "components_sections_statistics",
+  "info": {
+    "displayName": "Statistics Section",
+    "icon": "chartBubble",
+    "description": "Company statistics/numbers section"
+  },
+  "attributes": {
+    "heading": {
+      "type": "component",
+      "repeatable": false,
+      "component": "shared.section-heading"
+    },
+    "items": {
+      "type": "component",
+      "repeatable": true,
+      "component": "shared.statistic-item"
+    }
+  }
+}

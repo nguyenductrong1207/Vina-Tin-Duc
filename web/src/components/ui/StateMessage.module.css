@@ -1,0 +1,14 @@
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 20vh;
+  padding: var(--space-8);
+  text-align: center;
+}
+
+.message {
+  font-size: var(--font-size-lg);
+  color: var(--color-text-secondary);
+  max-width: 32rem;
+}

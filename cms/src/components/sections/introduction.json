@@ -1,0 +1,23 @@
+{
+  "collectionName": "components_sections_introductions",
+  "info": {
+    "displayName": "Introduction Section",
+    "icon": "information",
+    "description": "Company introduction section"
+  },
+  "attributes": {
+    "heading": {
+      "type": "component",
+      "repeatable": false,
+      "component": "shared.section-heading"
+    },
+    "content": {
+      "type": "richtext"
+    },
+    "image": {
+      "type": "media",
+      "multiple": false,
+      "allowedTypes": ["images"]
+    }
+  }
+}

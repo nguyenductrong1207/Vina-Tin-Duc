@@ -1,0 +1,104 @@
+.footer {
+  margin-top: auto;
+  background-color: var(--color-neutral-950);
+  color: var(--color-neutral-300);
+  padding-top: var(--space-16);
+  padding-bottom: var(--space-8);
+}
+
+.inner {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-12);
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: var(--space-10);
+}
+
+@media (min-width: 768px) {
+  .grid { grid-template-columns: repeat(2, 1fr); }
+}
+
+@media (min-width: 1024px) {
+  .grid { grid-template-columns: 2.5fr 1fr 1fr 1fr; }
+}
+
+.column {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-4);
+}
+
+.brand {
+  font-size: var(--font-size-xl);
+  font-weight: var(--font-weight-extrabold);
+  color: var(--color-neutral-0);
+  letter-spacing: var(--letter-spacing-tight);
+}
+
+.description {
+  font-size: var(--font-size-sm);
+  color: var(--color-neutral-500);
+}
+
+.address {
+  font-style: normal;
+  font-size: var(--font-size-sm);
+  line-height: var(--line-height-relaxed);
+  color: var(--color-neutral-400);
+}
+
+.columnTitle {
+  font-size: var(--font-size-xs);
+  font-weight: var(--font-weight-semibold);
+  color: var(--color-neutral-0);
+  text-transform: uppercase;
+  letter-spacing: var(--letter-spacing-wider);
+}
+
+.linkList {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-3);
+}
+
+.link {
+  font-size: var(--font-size-sm);
+  color: var(--color-neutral-400);
+  transition: color var(--duration-fast) var(--ease-out),
+              transform var(--duration-fast) var(--ease-out);
+  display: inline-block;
+}
+
+.link:hover {
+  color: var(--color-neutral-0);
+  transform: translateX(2px);
+}
+
+.contactList {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-3);
+}
+
+.contactItem {
+  font-size: var(--font-size-sm);
+  color: var(--color-neutral-400);
+}
+
+/* Bottom */
+.bottom {
+  border-top: 1px solid rgb(255 255 255 / 0.08);
+  padding-top: var(--space-6);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.copyright {
+  font-size: var(--font-size-xs);
+  color: var(--color-neutral-600);
+}
